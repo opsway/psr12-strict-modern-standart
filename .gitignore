@@ -1,0 +1,10 @@
+/.phpcs-cache
+/clover.xml
+/composer.lock
+/docs/html/
+/mkdocs.site.yml
+/phpcs.log
+/phpcs.xml
+/phpunit.xml
+/test/fix/
+/vendor/
