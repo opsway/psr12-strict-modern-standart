@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OpsWay\\StrictPSR12CodingStandard\\": "src/"
+            "OpsWay\\StrictPSR12CodingStandard\\": "OpsWayStrictPSR12CodingStandard/"
         }
     }
 }
