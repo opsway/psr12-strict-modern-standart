@@ -143,8 +143,6 @@
     <!-- Traits MUST be sorted alphabetically. -->
     <rule ref="WebimpressCodingStandard.Classes.AlphabeticallySortedTraits"/>
 
-    <!-- Default null values MUST be omitted for class properties. -->
-    <rule ref="WebimpressCodingStandard.Classes.NoNullValues"/>
 
     <!-- There MUST be a single empty line between methods in a class. -->
     <rule ref="WebimpressCodingStandard.Methods.LineAfter"/>
