@@ -264,6 +264,7 @@
     <rule ref="WebimpressCodingStandard.Functions.ReturnType"/>
     <rule ref="WebimpressCodingStandard.Commenting.TagWithType">
         <exclude name="WebimpressCodingStandard.Commenting.TagWithType.InvalidOrder"/>
+        <exclude name="WebimpressCodingStandard.Commenting.TagWithType.InvalidTypeFormat"/>
     </rule>
 
     <!-- The asterisks in a DocBlock should align, and there should be one
