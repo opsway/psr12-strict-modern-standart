@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# Navigate to your PHP project root
+# If it exists, remove old phpcs.xml and create new one
 
-# Remove old phpcs.xml and create new one
-rm -f phpcs.old
-mv phpcs.xml phpcs.old
+if [ -f phpcs.old ]; then
+    rm -f phpcs.old
+fi
+
+if [ -f phpcs.xml ]; then
+    mv phpcs.xml phpcs.old
+fi
 
 # Initialize the phpcs.xml file
 
