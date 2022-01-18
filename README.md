@@ -26,7 +26,15 @@ the basic coding standard. All additional checks and sniffs use from another thi
    }
    ```
 
-3. Create file `phpcs.xml` on base path of your repository with this content:
+3. Run the `init_phpcs.sh` to generate the PHP_CodeSniffer definition:
+
+   ```bash
+   wget https://raw.githubusercontent.com/opsway/psr12-strict-modern-standart/master/init_phpcs.sh
+   chmod +x ./init_phpcs.sh
+   ./init_phpcs.sh
+   ```
+
+   or, create the file `phpcs.xml` on root path of your repository with this content (notice entries under `<!-- Paths to check -->`):
 
    ```xml
    <?xml version="1.0"?>
