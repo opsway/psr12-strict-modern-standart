@@ -14,7 +14,7 @@ the basic coding standard. All additional checks and sniffs use from another thi
 1. Install the module via composer by running:
 
    ```bash
-   $ composer require --dev opsway/psr12-strict-coding-standard
+   composer require --dev opsway/psr12-strict-coding-standard
    ```
 
 2. Add composer scripts into your `composer.json`:
@@ -29,9 +29,9 @@ the basic coding standard. All additional checks and sniffs use from another thi
 3. Run the `init_phpcs.sh` to generate the PHP_CodeSniffer definition:
 
    ```bash
-   $ wget https://raw.githubusercontent.com/opsway/psr12-strict-modern-standart/master/init_phpcs.sh
-   $ chmod +x ./init_phpcs.sh
-   $ ./init_phpcs.sh
+   wget https://raw.githubusercontent.com/opsway/psr12-strict-modern-standart/master/init_phpcs.sh
+   chmod +x ./init_phpcs.sh
+   ./init_phpcs.sh
    ```
 
    or, create the file `phpcs.xml` on root path of your repository with this content (notice entries under `<!-- Paths to check -->`):
