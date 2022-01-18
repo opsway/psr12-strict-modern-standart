@@ -60,7 +60,7 @@ the basic coding standard. All additional checks and sniffs use from another thi
    </ruleset>
    ```
 
-You can add or exclude relevant directories within `file` elements under `<!-- Paths to check -->` in the PHP_CodeSniffer ruleset above.
+You can include or exclude relevant directories within `file` elements under `<!-- Paths to check -->` in the PHP_CodeSniffer ruleset above.
 For further reference, please see the PHP_CodeSniffer wiki: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
 
 ## Usage
