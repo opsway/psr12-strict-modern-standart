@@ -32,8 +32,9 @@ EOF
 # For each directory or symlink in curr dir only, place its relative path in <file></file> tags appended to ./phpcs.xml
 find . -maxdepth 1 -type d -or -type l | while read dir; do
     dir=${dir#./}
-    # dirs starting with a dot are hidden, so skip them
-    if ! [[ $dir =~ ^\. ]];
+    # skip hidden dirs starting with . (dot)
+    # and we're not responsible for 3rd party vendors' code style
+    if ! [[ $dir =~ ^\.|^vendor$ ]];
     then
         echo "    <file>$dir</file>" >> phpcs.xml
     fi
