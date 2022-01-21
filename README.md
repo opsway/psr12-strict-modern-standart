@@ -14,7 +14,7 @@ the basic coding standard. All additional checks and sniffs use from another thi
 1. Install the module via composer by running:
 
    ```bash
-   $ composer require --dev opsway/psr12-strict-coding-standard
+   composer require --dev opsway/psr12-strict-coding-standard
    ```
 
 2. Add composer scripts into your `composer.json`:
@@ -26,7 +26,15 @@ the basic coding standard. All additional checks and sniffs use from another thi
    }
    ```
 
-3. Create file `phpcs.xml` on base path of your repository with this content:
+3. Run the `init_phpcs.sh` to generate the PHP_CodeSniffer ruleset into your project root:
+
+   ```bash
+   wget https://raw.githubusercontent.com/opsway/psr12-strict-modern-standart/master/init_phpcs.sh
+   chmod +x ./init_phpcs.sh
+   ./init_phpcs.sh
+   ```
+
+   or, create a ruleset `phpcs.xml` in the project root with the following content (notice entries under `<!-- Paths to check -->`):
 
    ```xml
    <?xml version="1.0"?>
@@ -52,8 +60,8 @@ the basic coding standard. All additional checks and sniffs use from another thi
    </ruleset>
    ```
 
-You can add or exclude some locations in that file.
-For a reference please see: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
+You can include or exclude relevant directories within `file` elements under `<!-- Paths to check -->` in the PHP_CodeSniffer ruleset above.
+For further reference, please see the PHP_CodeSniffer wiki: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
 
 ## Usage
 
